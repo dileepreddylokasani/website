@@ -12,7 +12,6 @@ import {
   Smartphone, 
   BarChart3,
   ArrowRight,
-  Star,
   MapPin,
   Clock,
   Wallet,
@@ -60,33 +59,6 @@ export function HomePage() {
                   className="w-full h-full object-cover rounded-2xl"
                 />
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Trust Indicators */}
-      <section className="py-16 bg-white border-b">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <p className="text-gray-600 mb-8">Trusted by industry leaders worldwide</p>
-          </div>
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-            <div>
-              <div className="text-3xl lg:text-4xl text-emerald-600 mb-2">25,000+</div>
-              <div className="text-gray-600">Charging Points</div>
-            </div>
-            <div>
-              <div className="text-3xl lg:text-4xl text-blue-600 mb-2">50+</div>
-              <div className="text-gray-600">Cities</div>
-            </div>
-            <div>
-              <div className="text-3xl lg:text-4xl text-indigo-600 mb-2">500K+</div>
-              <div className="text-gray-600">Active Users</div>
-            </div>
-            <div>
-              <div className="text-3xl lg:text-4xl text-purple-600 mb-2">99.5%</div>
-              <div className="text-gray-600">Network Uptime</div>
             </div>
           </div>
         </div>
@@ -267,63 +239,6 @@ export function HomePage() {
             By connecting users, businesses, and communities through our intelligent charging platform, 
             we're building the foundation for a cleaner, more connected world.
           </p>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl text-gray-900 mb-4">
-              Trusted by Industry Leaders
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              See what our partners and users are saying about ChargeEV
-            </p>
-          </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                quote: "ChargeEV transformed our fleet operations. We've reduced charging costs by 30% while improving user satisfaction.",
-                author: "Sarah Chen",
-                role: "Fleet Manager",
-                company: "GreenLogistics Corp",
-                rating: 5
-              },
-              {
-                quote: "The unified network approach is genius. One app for thousands of chargers - exactly what EV users needed.",
-                author: "Marcus Rodriguez",
-                role: "EV User",
-                company: "San Francisco",
-                rating: 5
-              },
-              {
-                quote: "Revenue from our charging stations increased 150% after partnering with ChargeEV. The analytics are incredible.",
-                author: "Jennifer Park",
-                role: "Property Manager",
-                company: "Metro Shopping Centers",
-                rating: 5
-              }
-            ].map((testimonial, index) => (
-              <Card key={index} className="bg-white border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <CardContent className="p-6">
-                  <div className="flex mb-4">
-                    {Array.from({ length: testimonial.rating }).map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
-                    ))}
-                  </div>
-                  <blockquote className="text-gray-700 mb-6 leading-relaxed">
-                    "{testimonial.quote}"
-                  </blockquote>
-                  <div>
-                    <div className="text-gray-900 mb-1">{testimonial.author}</div>
-                    <div className="text-sm text-gray-600">{testimonial.role}</div>
-                    <div className="text-sm text-gray-500">{testimonial.company}</div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
         </div>
       </section>
 
