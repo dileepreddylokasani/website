@@ -194,7 +194,7 @@ export function AboutPage() {
                 </div>
                 <h3 className="font-semibold text-gray-900 mb-3">Human-Centric</h3>
                 <p className="text-gray-600 text-sm">
-                  Every decision we make starts with understanding and improving the human experience of electric mobility.
+                  Every decision we make starts with understanding and improving the customer experience of electric mobility.
                 </p>
               </CardContent>
             </Card>
